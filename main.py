@@ -26,7 +26,7 @@ def main():
 
     # Setup configurations
     openai_config = {
-        'api_key': "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",
+        'api_key': os.environ['OPENAI_API_KEY'],
         'show_usage': os.environ.get('SHOW_USAGE', 'false').lower() == 'true',
         'proxy': os.environ.get('PROXY', None),
         'max_history_size': int(os.environ.get('MAX_HISTORY_SIZE', 10)),

@@ -5,6 +5,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      #- .:/home/appuser/app
+      - .:/home/appuser/app
       #- .env:/home/appuser/app/.env
     restart: always
